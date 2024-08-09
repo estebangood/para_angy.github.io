@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatito Lanzando Corazón</title>
+ <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: orange;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    
+    .container {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        width: 300px;
+        padding-top: 10%;
+    }
+    
+    .animation-container {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .cat {
+        width: 100px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .heart {
+        width: 50px;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: heartAnimation 2s infinite;
+    }
+    
+    @keyframes heartAnimation {
+        0% {
+            top: -50px;
+            opacity: 1;
+        }
+        50% {
+            top: -150px;
+            opacity: 0.5;
+        }
+        100% {
+            top: -50px;
+            opacity: 1;
+        }
+    }
+    
+    .message-container {
+        margin-top: 20px;
+    }
+    
+    #message-text {
+        font-size: 16px;
+        color: #333;
+    }
+    
+ </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animation-container">
+            <img src="https://media.tenor.com/C6aFVb4hbesAAAAi/gatito-con-corazon.gif" alt="Gatito" class="cat">
+           
+        </div>
+        <hr>
+        <div class="message-container">
+            <p id="message-text">para Angelica (mi noviecita preciosaaa ❤️),
+
+                <br>
+                <br><br>
+                
+                Desde que entraste en mi vida, cada día ha sido una aventura llena de alegría y amor. Eres mi refugio en los días nublados y mi sol en los momentos más oscuros. Tu sonrisa ilumina mi mundo y tu risa es la melodía más hermosa que he escuchado.
+                
+                A tu lado, he descubierto un amor que no conocía, uno que crece más fuerte con cada momento que compartimos. Eres mi confidente, mi apoyo incondicional y mi mayor inspiración. Cada día contigo es un regalo que atesoro profundamente.
+                
+                Gracias por ser la persona maravillosa que eres, por darme amor y felicidad sin medida. Mi corazón late más rápido con solo pensar en ti, y no puedo esperar para crear más recuerdos juntos.
+                
+                Eres mi sueño hecho realidad, y mi amor por ti es infinito.
+                
+               
+                <br><br><br>
+                Con todo mi amor,
+                Dagoo 🐟
+                
+                </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
